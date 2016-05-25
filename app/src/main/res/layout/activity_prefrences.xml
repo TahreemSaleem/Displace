@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#de000000" android:weightSum="90"
+    android:id="@+id/layout1"
+    >
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/food"
+        android:background="@drawable/food"
+
+        android:layout_marginTop="103dp"
+        android:onClick="select"
+        android:src="@drawable/selector_prefrence"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/button" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/beauty"
+        android:background="@drawable/beauty"
+        android:layout_alignBottom="@+id/food"
+        android:layout_toEndOf="@+id/food"
+        android:layout_marginStart="10dp"
+        android:onClick="select"
+        android:src="@drawable/selector_prefrence"/>
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/shirt"
+        android:background="@drawable/shirt"
+        android:layout_alignTop="@+id/beauty"
+        android:layout_toEndOf="@+id/beauty"
+        android:layout_marginStart="10dp"
+        android:onClick="select"
+        android:src="@drawable/selector_prefrence"/>
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/books"
+        android:background="@drawable/books"
+        android:layout_alignBottom="@+id/shirt"
+        android:layout_toEndOf="@+id/shirt"
+        android:layout_marginStart="10dp"
+        android:onClick="select"
+        android:src="@drawable/selector_prefrence"/>
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/drug"
+        android:background="@drawable/drug"
+        android:layout_below="@+id/food"
+        android:layout_alignStart="@+id/food"
+        android:layout_marginStart="47dp"
+        android:onClick="select"
+        android:src="@drawable/selector_prefrence"/>
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/ring"
+        android:background="@drawable/ring"
+        android:layout_alignBottom="@+id/drug"
+        android:layout_toEndOf="@+id/drug"
+        android:layout_marginStart="10dp"
+        android:onClick="select"
+        android:src="@drawable/selector_prefrence"/>
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/electronic"
+        android:background="@drawable/electronic"
+        android:layout_alignBottom="@+id/ring"
+        android:layout_toEndOf="@+id/ring"
+        android:layout_marginStart="10dp"
+        android:onClick="select"
+        android:src="@drawable/selector_prefrence"/>
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/microwave"
+        android:background="@drawable/microwave"
+        android:layout_below="@+id/drug"
+        android:layout_toEndOf="@+id/food"
+
+        android:layout_marginStart="10dp"
+        android:onClick="select"
+        android:src="@drawable/selector_prefrence"
+        />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/sports"
+        android:background="@drawable/sports"
+        android:layout_below="@+id/ring"
+        android:layout_toEndOf="@+id/microwave" android:layout_marginStart="10dp"
+        android:onClick="select"
+        android:src="@drawable/selector_prefrence"/>
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/shoe"
+        android:background="@drawable/shoe"
+        android:layout_below="@+id/microwave"
+        android:layout_alignStart="@+id/ring"
+        android:onClick="select"
+        android:src="@drawable/selector_prefrence"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Continue"
+        android:id="@+id/button"
+
+
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+
+
+        android:background="@drawable/selector_button_red"
+        android:shadowColor="#FF5476"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:onClick="Continue_btn_click"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Pick your choice"
+        android:id="@+id/textView"
+        android:textSize="30dp"
+        android:textIsSelectable="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:textColor="#FFF" />
+
+
+</RelativeLayout>

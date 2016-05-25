@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+  >
+
+    <TextView
+        android:id="@+id/Product"
+        android:text="Product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/Outlet"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/Outlet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Outlet"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/Brand"
+        android:layout_alignLeft="@+id/Brand"
+        android:layout_alignStart="@+id/Brand" />
+
+    <TextView
+        android:id="@+id/Brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Brand"
+        android:textStyle="bold"
+        android:layout_marginTop="28dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="91dp"
+        android:layout_marginStart="91dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Price"
+        android:id="@+id/Price"
+
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="93dp"
+        android:layout_marginEnd="93dp"
+        android:layout_alignTop="@+id/Product"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignTop="@+id/Brand"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/Outlet"
+        android:layout_toStartOf="@+id/Outlet"
+        android:layout_alignBottom="@+id/Product" />
+
+</RelativeLayout>
